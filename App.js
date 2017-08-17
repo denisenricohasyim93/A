@@ -22,3 +22,4 @@ AppRegistry.registerComponent('AwesomeProject', () => HelloWorldApp);
 
 //PERUBAHAN A
 //PERUBAHAN B
+//PERUBAHAN C
