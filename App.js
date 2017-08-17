@@ -20,3 +20,4 @@ export default class HelloWorldApp extends Component {
 // skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => HelloWorldApp);
 
+//PERUBAHAN A
