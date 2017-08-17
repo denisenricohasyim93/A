@@ -21,3 +21,4 @@ export default class HelloWorldApp extends Component {
 AppRegistry.registerComponent('AwesomeProject', () => HelloWorldApp);
 
 //PERUBAHAN A
+//PERUBAHAN B
