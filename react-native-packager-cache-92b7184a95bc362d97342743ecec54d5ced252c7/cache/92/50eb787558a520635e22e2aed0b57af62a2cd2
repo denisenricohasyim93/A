@@ -10,6 +10,10 @@ var _react2 = babelHelpers.interopRequireDefault(_react);
 
 var _reactNative = require('react-native');
 
+var _jquery = require('jquery');
+
+var _jquery2 = babelHelpers.interopRequireDefault(_jquery);
+
 var HelloWorldApp = function (_Component) {
   babelHelpers.inherits(HelloWorldApp, _Component);
 
@@ -26,14 +30,14 @@ var HelloWorldApp = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 8
+            lineNumber: 10
           }
         },
         _react2.default.createElement(
           _reactNative.Text,
           { style: { fontWeight: 'bold' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 9
+              lineNumber: 11
             }
           },
           'Denis Enrico Hasyim'
@@ -43,14 +47,14 @@ var HelloWorldApp = function (_Component) {
           source: require('./img/favicon.png'),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 12
           }
         }),
         _react2.default.createElement(
           _reactNative.Text,
           { style: { fontWeight: 'bold' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 14
+              lineNumber: 16
             }
           },
           'Batch 5 Genovese'
@@ -62,6 +66,12 @@ var HelloWorldApp = function (_Component) {
 }(_react.Component);
 
 exports.default = HelloWorldApp;
+
+_jquery2.default.ajax('http://jsonplaceholder.typicode.com/posts/1', {
+  method: 'GET'
+}).then(function (data) {
+  console.log(data);
+});
 
 _reactNative.AppRegistry.registerComponent('AwesomeProject', function () {
   return HelloWorldApp;
